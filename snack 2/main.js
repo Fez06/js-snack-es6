@@ -37,3 +37,12 @@ const elencoStudenti = [
         'somma voti': 84
     }
 ];
+
+const nomiUrlati = elencoStudenti.filter((studente)=>{
+    if (studente.nome.toUpperCase) {
+        return true
+    }
+})
+
+console.log(nomiUrlati);
+
