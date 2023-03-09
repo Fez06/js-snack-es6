@@ -37,12 +37,32 @@ const elencoStudenti = [
         'somma voti': 84
     }
 ];
+//--------------------------------
 
-const nomiUrlati = elencoStudenti.filter((studente)=>{
-    if (studente.nome.toUpperCase) {
-        return true
-    }
-})
+
+const nomiUrlati = elencoStudenti.map((studente)=>{
+    //console.log(studente.nome.toUpperCase());
+    return studente.nome.toUpperCase()
+});
 
 console.log(nomiUrlati);
+//--------------------------------
+
+const piuDi70 = elencoStudenti.filter((studente) => {
+    if (studente['somma voti'] > 70) {
+        return true
+    };
+});
+console.log(piuDi70);
+//--------------------------------
+
+const idPiuDi70 = elencoStudenti.filter((studente) => {
+    if ((studente['somma voti'] > 70) && (studente.id > 120)) {
+        return true
+    };
+});
+console.log(idPiuDi70);
+
+
+
 
