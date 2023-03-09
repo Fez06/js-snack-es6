@@ -27,8 +27,8 @@ const listaBici = [
     }
 ];
 
-const pesiBici = listaBici.map((element)=> element.peso).forEach((element) => element < )
-console.log(pesiBici)
+const pesoMinore = Math.min(...(listaBici.map((element) => element.peso)))//.forEach((element) => element < )
+console.log(pesoMinore)
     
 
 
