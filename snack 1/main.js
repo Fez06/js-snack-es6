@@ -2,7 +2,7 @@
 
 const listaInvitati = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin'];
 
-console.log(listaInvitati);
+//console.log(listaInvitati);
 
 const nuovaListaInvitati = listaInvitati.map((oggetto, index)=>{
     return oggetto = {
