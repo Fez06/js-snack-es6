@@ -27,7 +27,12 @@ const listaBici = [
     }
 ];
 
-
+listaBici.forEach(element => {
+    const {nome, peso} = element;
+    return element
+    
+});
+console.log(listaBici)
 
 /*const pesoMinore = Math.min(...(listaBici.map((element) => element.peso)))
 console.log(pesoMinore)*/
