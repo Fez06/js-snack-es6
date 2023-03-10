@@ -32,11 +32,18 @@ function randomNumber1a40() {
     return Math.floor(Math.random() * (40 - 0 + 1) ) + 0;
 }
 //console.log(randomNumber1a40());
+squadre.forEach(element => {
+    element['punti fatti'] = randomNumber1a40();
+    element['falli subiti'] = randomNumber1a40();
 
-//squadre['punti fatti'] : randomNumber1a40();
-//squadre['falli subiti'] = randomNumber1a40();
+    
+});
 
-console.log(squadre)
+const x = squadre.map(element => {
+    c
+})
+console.log(squadre);
+
 //--------------MAIN
 /*squadre.forEach((element) => {
     if (element['punti fatti'] === 0) {

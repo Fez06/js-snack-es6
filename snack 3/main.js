@@ -29,16 +29,16 @@ const listaBici = [
     }
 ];
 
-listaBici.forEach(element => {
+listaBici.forEach(currentBike => {
     //console.log(element);
     
-    if (element.peso < pesoMinore || pesoMinore == 0) {
+    if (currentBike.peso < pesoMinore || pesoMinore == 0) {
         //const {nome, peso} = element;
-        pesoMinore = element;
+        pesoMinore = currentBike;
     
         console.log(pesoMinore.nome);
         console.log(pesoMinore.peso);
-        
+        return true
     };
     //let {nome, peso} = pesoMinore;
     
