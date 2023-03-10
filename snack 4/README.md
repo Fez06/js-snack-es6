@@ -14,4 +14,4 @@ RISOLUZIONE:
 
 3-Destrutturo i nomi e i falli dall'array delle squadre e li uso per creare un nuovo array.
 
-4-=Aggiungo la stampa in console.
+4-Aggiungo la stampa in console.
