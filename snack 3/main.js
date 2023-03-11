@@ -5,33 +5,35 @@
 const listaBici = [
     {
         nome: 'gialla',
-        peso: '20'
+        peso: 20
     },
     {
         nome: 'rossa',
-        peso: '25'
+        peso: 25
     },
-    {
-        nome: 'nera',
-        peso: '12'
-    },
+    
     {
         nome: 'blu',
-        peso: '16'
+        peso: 16
     },
     {
         nome: 'bianca',
-        peso: '13'
+        peso: 13
     },
     {
-        nome: 'verde',
-        peso: '18'
+        nome: 'carbonio',
+        peso: 7
+    },
+    {
+        nome: 'nera',
+        peso: 11
     }
 ];
 
 //for (let i = 0; i < listaBici.length; i++) {
 
 //}
+
 
 if (listaBici.length === 0) {
     console.log('niente bici')
@@ -41,11 +43,10 @@ if (listaBici.length === 0) {
     
     //console.log(element.nome);
     
-    listaBici.forEach((element) => {
+    listaBici.forEach(element => {
         if (element.peso < pesoMinore.peso) {
             pesoMinore = element;
-            console.log(pesoMinore);
-            
+            console.log(pesoMinore);   
         }
     })
     const {nome, peso} = pesoMinore;
