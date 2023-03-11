@@ -1,6 +1,6 @@
 'use strict';
 
-let pesoMinore = 0;
+
 
 const listaBici = [
     {
@@ -29,25 +29,41 @@ const listaBici = [
     }
 ];
 
-listaBici.forEach(currentBike => {
-    //console.log(element);
+//for (let i = 0; i < listaBici.length; i++) {
+
+//}
+
+if (listaBici.length === 0) {
+    console.log('niente bici')
+} else {
+    let pesoMinore = listaBici[0];
     
-    if (currentBike.peso < pesoMinore || pesoMinore == 0) {
-        //const {nome, peso} = element;
-        pesoMinore = currentBike;
     
-        console.log(pesoMinore.nome);
-        console.log(pesoMinore.peso);
-        return true
-    };
-    //let {nome, peso} = pesoMinore;
+    //console.log(element.nome);
     
+    listaBici.forEach((element) => {
+        if (element.peso < pesoMinore.peso) {
+            pesoMinore = element;
+            console.log(pesoMinore);
+            
+        }
+    })
+    const {nome, peso} = pesoMinore;
+    console.log(peso);
+    console.log(nome);
+    console.log(`La bici piu' leggera e' la bici ${nome} con ${peso}kg!`)
+    //return pesoMinore;
+}
     
 
-});
 
-console.log(pesoMinore.nome);
-console.log(`La bici che pesa di meno e' la ${pesoMinore.nome} per un peso di ${pesoMinore.peso}kg!`);
+
+//console.log(pesoMinore[peso])
+
+
+
+//console.log(pesoMinore.nome);
+//console.log(`La bici che pesa di meno e' la ${pesoMinore.nome} per un peso di ${pesoMinore.peso}kg!`);
 
 
 /*const pesoMinore = Math.min(...(listaBici.map((element) => element.peso)))
